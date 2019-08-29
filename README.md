@@ -16,15 +16,12 @@ I have assumed that if you are running windows you will use Powershell to run co
 8. Run: docker-compose run web rails new . --force --no-deps --database=mysql
 9. When this has finished, edit the resulting config/database.yml. Change the default section so that 'host' is set to 'db' and the password matches the one you chase above, e.g:
 
-`  
-
       adapter: mysql2  
       encoding: utf8  
       pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>  
       username: root  
       password: <<YOUR CHOSEN PASSWORD>>  
       host: db
-`
 
 10. Run: docker-compose up 
 11. Wait for mysql to finish initialising itself and interrupt this via Ctrl-C

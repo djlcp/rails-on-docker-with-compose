@@ -25,7 +25,7 @@ I have assumed that if you are running windows you will use Powershell to run co
 
 10. Run: docker-compose up 
 11. Wait for mysql to finish initialising itself and interrupt this via Ctrl-C
-12. Run: docker-compose web rails db:create
+12. Run: docker-compose run web rails db:create
 13. IF building Rails 6, run: docker-compose run web rails webpacker:install
 
 Now you're ready to go!
